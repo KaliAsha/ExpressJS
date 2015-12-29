@@ -1,4 +1,6 @@
 # HelloWorld ExpressJS Default App
 
 #### Use
-- Socket.ios
+- Debug
+- Node-compass
+- Socket.io
