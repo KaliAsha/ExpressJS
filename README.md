@@ -4,3 +4,4 @@
 - Debug
 - Node-compass
 - Socket.io
+- ES2015 Syntax

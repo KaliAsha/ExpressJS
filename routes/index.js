@@ -1,7 +1,7 @@
-module.exports = function(io) {
-  var debug = require('debug')('HelloWorld:index');
-  var express = require('express');
-  var router = express.Router();
+module.exports = (io) => {
+  const debug = require('debug')('HelloWorld:index');
+  const express = require('express');
+  const router = express.Router();
 
   /* GET home page */
   router.get('/', function(req, res, next) {

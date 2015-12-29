@@ -1,7 +1,7 @@
-module.exports = function(io) {
-  var debug = require('debug')('HelloWorld:users');
-  var express = require('express');
-  var router = express.Router();
+module.exports = (io) => {
+  const debug = require('debug')('HelloWorld:users');
+  const express = require('express');
+  const router = express.Router();
 
   /* GET users */
   router.get('/', function(req, res, next) {
