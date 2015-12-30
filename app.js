@@ -15,6 +15,12 @@ app.io = io;
 const routes = require('./routes/index')(io);
 const users = require('./routes/users')(io);
 
+/* Partials setup */
+app.set('partials', {
+  body: 'partial'
+});
+
+
 /* View engine setup */
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hjs');

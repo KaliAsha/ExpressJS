@@ -5,9 +5,11 @@ module.exports = (io) => {
 
   /* GET home page */
   router.get('/', function(req, res, next) {
-    res.render('index', {
+    var partials = req.app.get('partials');
+    partials.body = 'partial';
+    res.render('layout', {
       title: 'Express',
-      partials: {partial: 'partial'}
+      partials
     });
   });
 
